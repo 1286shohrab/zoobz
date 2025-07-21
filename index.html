@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ZOOBA | Textile & Fabrics</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>ZOOBA TEXTILES</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="hero">
+      <h2>Welcome to ZOOBA</h2>
+      <p>Your destination for premium fabrics & textiles.</p>
+    </div>
+  </section>
+
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="" alt="">
+        <img src="Rehan.png" alt="Cotton Fabric" style="height: 50%px; width: 90%;">
+        <h3>Cotton Fabric</h3>
+        <p>Soft and breathable for all seasons.</p>
+      </div>
+      <div class="product">
+        <img src="rehan1.webp" alt="Silk Fabric" style="width: 90%; height: 50%;">
+        <h3>Silk Fabric</h3>
+        <p>Luxury feel with rich textures.</p>
+      </div>
+      <div class="product">
+        <img src="rehan2.webp" alt="Wool Fabric" style="width:90%;  height: 50%;">
+        <h3>Wool Fabric</h3>
+        <p>Warm, elegant, and durable.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form onsubmit="sendMessage(); return false;">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <input type="submit" value="Submit">
+  <input type="reset" value="Reset">
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 ZOOBA Textiles. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>  
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Textile Products</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #f7f7f7;
+      padding: 20px;
+    }
+    .product {
+      border: 1px solid #ccc;
+      background: #fff;
+      padding: 10px;
+      margin: 10px;
+      width: 220px;
+      display: inline-block;
+      vertical-align: top;
+      border-radius: 10px;
+      box-shadow: 0 0 5px #ccc;
+      text-align: center;
+    }
+    img {
+      width: 200px;
+      height: auto;
+      border-radius: 10px;
+    }
+    h3 {
+      margin: 10px 0 5px;
+    }
+    .price {
+      color: green;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Our Textile Products</h1>
+
+<div class="product">
+  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACW..." alt="T-shirt">
+  <h3>Casual T-Shirt</h3>
+  <p class="price">₹499</p>
+</div>
+
+<div class="product">
+  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACX..." alt="Saree">
+  <h3>Silk Saree</h3>
+  <p class="price">₹2,199</p>
+</div>
+
+<div class="product">
+  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACZ..." alt="Jacket">
+  <h3>Winter Jacket</h3>
+  <p class="price">₹1,899</p>
+</div>
+
+<div class="product">
+  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACY..." alt="Dress">
+  <h3>Designer Dress</h3>
+  <p class="price">₹1,299</p>
+</div>
+
+</body>
+</html>
