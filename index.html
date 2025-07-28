@@ -3,129 +3,239 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ZOOBA | Textile & Fabrics</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>luca textile Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+    }
+    header, footer {
+      background-color: #222;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #fff;
+      text-decoration: none;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .product-card {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .product-card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    .login-form {
+      max-width: 400px;
+      margin: auto;
+    }
+    .ad-section {
+      text-align: center;
+      margin: 30px 0;
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <h1>ZOOBA TEXTILES</h1>
+    <h1>luca textile Store</h1>
     <nav>
-      <a href="#home">Home</a>
-      <a href="#products">Products</a>
-      <a href="#contact">Contact</a>
+      <a href="home.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="log in.html">Login</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <section id="home">
-    <div class="hero">
-      <h2>Welcome to ZOOBA</h2>
-      <p>Your destination for premium fabrics & textiles.</p>
-    </div>
-  </section>
+  
 
-  <section id="products">
-    <h2>Our Products</h2>
-    <div class="product-grid">
-      <div class="product">
-        <img src="" alt="">
-        <img src="Rehan.png" alt="Cotton Fabric" style="height: 50%px; width: 90%;">
-        <h3>Cotton Fabric</h3>
-        <p>Soft and breathable for all seasons.</p>
-      </div>
-      <div class="product">
-        <img src="rehan1.webp" alt="Silk Fabric" style="width: 90%; height: 50%;">
-        <h3>Silk Fabric</h3>
-        <p>Luxury feel with rich textures.</p>
-      </div>
-      <div class="product">
-        <img src="rehan2.webp" alt="Wool Fabric" style="width:90%;  height: 50%;">
-        <h3>Wool Fabric</h3>
-        <p>Warm, elegant, and durable.</p>
-      </div>
-    </div>
-  </section>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <form onsubmit="sendMessage(); return false;">
-      <input type="text" id="name" placeholder="Your Name" required />
-      <input type="email" id="email" placeholder="Your Email" required />
-      <input type="submit" value="Submit">
-  <input type="reset" value="Reset">
-    </form>
-  </section>
 
-  <footer>
-    <p>© 2025 ZOOBA Textiles. All rights reserved.</p>
-  </footer>
 
-  <script src="script.js"></script>
-</body>
-</html>  
-
-<!DOCTYPE html>
-<html>
+  <!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Textile Products</title>
+  <meta charset="UTF-8">
+  <title>Dress Store Homepage</title>
   <style>
     body {
-      font-family: Arial;
-      background: #f7f7f7;
-      padding: 20px;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #fffafc;
     }
-    .product {
-      border: 1px solid #ccc;
-      background: #fff;
-      padding: 10px;
-      margin: 10px;
-      width: 220px;
-      display: inline-block;
-      vertical-align: top;
-      border-radius: 10px;
-      box-shadow: 0 0 5px #ccc;
+
+    header {
+      background-color: #f76b8a;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      font-size: 28px;
+    }
+
+    /* SLIDER SECTION */
+    .slider {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .slide {
+      flex: 0 0 auto;
+      width: 100%;
+      max-width: 500px;
+      margin: 20px auto;
+      scroll-snap-align: center;
       text-align: center;
     }
-    img {
-      width: 200px;
+
+    .slide img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .slide-title {
+      margin-top: 10px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    /* PRODUCT CARDS */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .product-card {
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+    }
+
+    .product-card img {
+      width: 100%;
+      max-width: 200px;
       height: auto;
       border-radius: 10px;
     }
-    h3 {
+
+    .product-name {
       margin: 10px 0 5px;
+      font-weight: bold;
+      font-size: 16px;
     }
+
     .price {
-      color: green;
+      color: #f76b8a;
       font-weight: bold;
     }
   </style>
 </head>
 <body>
 
-<h1>Our Textile Products</h1>
+  <header>👗 Welcome to Dress World – Boys, Girls & Kids</header>
 
-<div class="product">
-  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACW..." alt="T-shirt">
-  <h3>Casual T-Shirt</h3>
-  <p class="price">₹499</p>
-</div>
+  <!-- SLIDER -->
+  <div class="slider">
+    <div class="slide">
+      <img src="https://pngimg.com/uploads/dress/dress_PNG110.png" alt="Girls Dress">
+      <div class="slide-title">Stylish Girls Dress</div>
+    </div>
+    <div class="slide">
+      <img src="1.jpg" alt="Kids Dress">
+      <div class="slide-title">1.jpg</div>
+    </div>
+    <div class="slide">
+      <img src="5.webp" alt="Boys Dress">
+      <div class="slide-title">Trendy Boys Wear</div>
+    </div>
+  </div>
 
-<div class="product">
-  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACX..." alt="Saree">
-  <h3>Silk Saree</h3>
-  <p class="price">₹2,199</p>
-</div>
-
-<div class="product">
-  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACZ..." alt="Jacket">
-  <h3>Winter Jacket</h3>
-  <p class="price">₹1,899</p>
-</div>
-
-<div class="product">
-  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACY..." alt="Dress">
-  <h3>Designer Dress</h3>
-  <p class="price">₹1,299</p>
-</div>
+  <!-- PRODUCT CARDS -->
+  <div class="products">
+    <div class="product-card">
+      <img src="https://pngimg.com/uploads/dress/dress_PNG108.png" alt="Dress 1">
+      <div class="product-name">Floral Pink Frock</div>
+      <div class="price">₹899</div>
+    </div>
+    <div class="product-card">
+      <img src="3.webp" alt="Dress 2">
+      <div class="product-name">Boys Summer Shirt</div>
+      <div class="price">₹699</div>
+    </div>
+    <div class="product-card">
+      <img src="4.webp" alt="Dress 3">
+      <div class="product-name">Baby Romper</div>
+      <div class="price">₹499</div>
+    </div>
+  </div>
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
